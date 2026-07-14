@@ -1,1 +1,795 @@
-__PLACEHOLDER__
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Čestitam ljubavi ❤️</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<style>
+  :root{
+    --pink-1:#ffd6e8;
+    --pink-2:#ffb6d9;
+    --purple-1:#c9a7f7;
+    --purple-2:#9a7bd1;
+    --card-bg: rgba(255,255,255,0.18);
+    --card-border: rgba(255,255,255,0.35);
+    --text-dark:#4a2c52;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    overflow-x:hidden;
+    font-family:'Segoe UI', 'Trebuchet MS', sans-serif;
+    color:var(--text-dark);
+  }
+
+  body{
+    min-height:100vh;
+    background:linear-gradient(135deg, var(--purple-1), var(--pink-1) 40%, var(--pink-2) 70%, var(--purple-2));
+    background-size:300% 300%;
+    animation: gradientShift 18s ease infinite;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+  }
+
+  @keyframes gradientShift{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+  }
+
+  /* ---------- Loading Screen ---------- */
+  #loading-screen{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg, var(--purple-2), var(--pink-2));
+    transition:opacity 0.8s ease, visibility 0.8s ease;
+  }
+
+  #loading-screen.hidden{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+  }
+
+  .loading-heart{
+    font-size:4rem;
+    animation:pulseHeart 1.2s ease-in-out infinite;
+    filter:drop-shadow(0 0 15px rgba(255,255,255,0.6));
+  }
+
+  @keyframes pulseHeart{
+    0%,100%{ transform:scale(1); }
+    50%{ transform:scale(1.25); }
+  }
+
+  .loading-text{
+    margin-top:20px;
+    font-size:1.3rem;
+    color:#fff;
+    letter-spacing:1px;
+    text-shadow:0 2px 10px rgba(0,0,0,0.25);
+    animation:fadeInOut 1.6s ease-in-out infinite;
+  }
+
+  @keyframes fadeInOut{
+    0%,100%{ opacity:0.4; }
+    50%{ opacity:1; }
+  }
+
+  .loading-dots span{
+    display:inline-block;
+    animation:dotBounce 1.4s infinite;
+  }
+  .loading-dots span:nth-child(2){ animation-delay:0.2s; }
+  .loading-dots span:nth-child(3){ animation-delay:0.4s; }
+
+  @keyframes dotBounce{
+    0%,80%,100%{ transform:translateY(0); opacity:0.5; }
+    40%{ transform:translateY(-6px); opacity:1; }
+  }
+
+  /* ---------- Background canvases ---------- */
+  #stars-canvas, #hearts-bg-canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+    pointer-events:none;
+  }
+
+  /* ---------- Sparkle ---------- */
+  .sparkle{
+    position:fixed;
+    pointer-events:none;
+    font-size:1rem;
+    z-index:5;
+    animation:sparkleAnim 1s ease-out forwards;
+  }
+
+  @keyframes sparkleAnim{
+    0%{ transform:scale(0) rotate(0deg); opacity:1; }
+    60%{ transform:scale(1.3) rotate(180deg); opacity:1; }
+    100%{ transform:scale(0) rotate(360deg); opacity:0; }
+  }
+
+  /* ---------- Main container ---------- */
+  .container{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:560px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+  }
+
+  /* ---------- Glass Card ---------- */
+  .card{
+    width:100%;
+    background:var(--card-bg);
+    border:1px solid var(--card-border);
+    border-radius:28px;
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    box-shadow:0 8px 32px rgba(105,50,120,0.35), inset 0 0 40px rgba(255,255,255,0.08);
+    padding:40px 30px;
+    text-align:center;
+    opacity:0;
+    transform:translateY(40px) scale(0.96);
+    animation:fadeInUp 1.2s ease forwards;
+    animation-delay:0.2s;
+  }
+
+  @keyframes fadeInUp{
+    to{ opacity:1; transform:translateY(0) scale(1); }
+  }
+
+  .card.hidden-card{
+    display:none;
+  }
+
+  .title{
+    font-size:2.2rem;
+    font-weight:800;
+    margin:0 0 20px;
+    background:linear-gradient(90deg, #fff, #ffe3f3, #fff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    text-shadow:0 4px 18px rgba(255,255,255,0.25);
+    animation:floatText 4s ease-in-out infinite;
+    line-height:1.3;
+  }
+
+  @keyframes floatText{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-6px); }
+  }
+
+  .message{
+    font-size:1.05rem;
+    line-height:1.8;
+    color:#fff;
+    text-shadow:0 2px 8px rgba(0,0,0,0.2);
+    white-space:pre-line;
+    margin-bottom:30px;
+  }
+
+  .surprise-message{
+    font-size:1.05rem;
+    line-height:1.9;
+    color:#fff;
+    text-shadow:0 2px 8px rgba(0,0,0,0.2);
+    white-space:pre-line;
+    margin-bottom:26px;
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    position:relative;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-size:1.15rem;
+    font-weight:700;
+    padding:16px 38px;
+    border-radius:50px;
+    color:#5a2a55;
+    background:linear-gradient(135deg,#fff, #ffd6ec);
+    box-shadow:0 6px 20px rgba(120,40,110,0.35);
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+    overflow:hidden;
+    -webkit-tap-highlight-color:transparent;
+  }
+
+  .btn:hover{
+    transform:translateY(-4px) scale(1.04);
+    box-shadow:0 10px 28px rgba(120,40,110,0.5);
+  }
+
+  .btn:active{
+    transform:translateY(-1px) scale(0.98);
+  }
+
+  .btn::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:0;
+    height:0;
+    background:rgba(255,255,255,0.6);
+    border-radius:100%;
+    transform:translate(-50%,-50%);
+    transition:width 0.5s ease, height 0.5s ease, opacity 0.6s ease;
+    opacity:0;
+  }
+
+  .btn:active::after{
+    width:220px;
+    height:220px;
+    opacity:1;
+    transition:0s;
+  }
+
+  .kiss-btn{
+    margin-top:6px;
+    background:linear-gradient(135deg,#ff9ec7,#c98bf0);
+    color:#fff;
+  }
+
+  /* ---------- Countdown ---------- */
+  .countdown-label{
+    font-size:0.95rem;
+    color:#fff;
+    opacity:0.9;
+    margin-bottom:12px;
+    letter-spacing:0.5px;
+  }
+
+  .countdown{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:28px;
+    flex-wrap:wrap;
+  }
+
+  .countdown .unit{
+    background:rgba(255,255,255,0.22);
+    border:1px solid rgba(255,255,255,0.4);
+    border-radius:16px;
+    padding:12px 16px;
+    min-width:70px;
+    backdrop-filter:blur(6px);
+  }
+
+  .countdown .unit .num{
+    font-size:1.8rem;
+    font-weight:800;
+    color:#fff;
+    display:block;
+    text-shadow:0 2px 6px rgba(0,0,0,0.25);
+  }
+
+  .countdown .unit .lbl{
+    font-size:0.7rem;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:#fff;
+    opacity:0.85;
+  }
+
+  /* ---------- Footer message ---------- */
+  .footer-msg{
+    margin-top:6px;
+    font-size:1rem;
+    font-weight:600;
+    color:#fff;
+    text-shadow:0 2px 10px rgba(0,0,0,0.25);
+    opacity:0;
+    animation:fadeInUp 1s ease forwards;
+    animation-delay:1.6s;
+  }
+
+  /* ---------- Music toggle ---------- */
+  #music-toggle{
+    position:fixed;
+    top:18px;
+    right:18px;
+    z-index:50;
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.5);
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(10px);
+    font-size:1.4rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:transform 0.3s ease, background 0.3s ease;
+    color:#fff;
+  }
+
+  #music-toggle:hover{
+    transform:scale(1.1) rotate(10deg);
+    background:rgba(255,255,255,0.4);
+  }
+
+  #music-toggle.playing{
+    animation:musicSpin 3s linear infinite;
+  }
+
+  @keyframes musicSpin{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+  }
+
+  /* ---------- Kiss overlay ---------- */
+  #kiss-overlay{
+    position:fixed;
+    inset:0;
+    z-index:200;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    pointer-events:none;
+    opacity:0;
+    transition:opacity 0.6s ease;
+  }
+
+  #kiss-overlay.active{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  #kiss-overlay .kiss-text{
+    position:relative;
+    z-index:2;
+    font-size:1.8rem;
+    font-weight:800;
+    color:#fff;
+    text-align:center;
+    padding:20px 30px;
+    text-shadow:0 4px 20px rgba(120,20,90,0.6);
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.4);
+    border-radius:24px;
+    backdrop-filter:blur(10px);
+    max-width:80%;
+    opacity:0;
+    transform:scale(0.7);
+    animation:kissTextIn 0.6s ease forwards 0.4s;
+  }
+
+  @keyframes kissTextIn{
+    to{ opacity:1; transform:scale(1); }
+  }
+
+  #kiss-canvas{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+  }
+
+  #confetti-canvas{
+    position:fixed;
+    inset:0;
+    z-index:150;
+    pointer-events:none;
+    width:100%;
+    height:100%;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:480px){
+    .title{ font-size:1.6rem; }
+    .message, .surprise-message{ font-size:0.95rem; }
+    .card{ padding:30px 20px; border-radius:22px; }
+    .btn{ font-size:1rem; padding:14px 28px; }
+    .countdown .unit{ min-width:58px; padding:10px 10px; }
+    .countdown .unit .num{ font-size:1.4rem; }
+    #music-toggle{ width:44px; height:44px; font-size:1.2rem; top:12px; right:12px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-heart">❤️</div>
+    <div class="loading-text">Pripremam iznenađenje... ✨<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></div>
+  </div>
+
+  <canvas id="stars-canvas"></canvas>
+  <canvas id="hearts-bg-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+
+  <button id="music-toggle" title="Uključi/isključi muziku">🎵</button>
+  <audio id="bg-music" loop preload="none">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+
+    <!-- Card 1: Main congrats -->
+    <div class="card" id="card-1">
+      <h1 class="title">🎉 Čestitam ljubavi! ❤️</h1>
+      <p class="message">Presrećan sam što si položila sve ispite i očistila godinu.
+Znao sam da možeš i beskrajno sam ponosan na tebe.
+Zaslužila si svaki uspeh koji si ostvarila i jedva čekam da zajedno proslavimo.</p>
+      <button class="btn" id="reveal-btn">💌 Klikni ovde</button>
+    </div>
+
+    <!-- Card 2: Surprise + countdown -->
+    <div class="card hidden-card" id="card-2">
+      <p class="surprise-message">Ali... ovo nije kraj iznenađenja. ❤️
+
+Ovo je samo mali znak pažnje.
+Pravi poklon te čeka sutra.
+Zato se spremi... biće još lepše nego što očekuješ. 🎁✨</p>
+
+      <div class="countdown-label">Do sledećeg iznenađenja:</div>
+      <div class="countdown">
+        <div class="unit"><span class="num" id="cd-hours">00</span><span class="lbl">Sati</span></div>
+        <div class="unit"><span class="num" id="cd-minutes">00</span><span class="lbl">Minuta</span></div>
+        <div class="unit"><span class="num" id="cd-seconds">00</span><span class="lbl">Sekundi</span></div>
+      </div>
+
+      <button class="btn kiss-btn" id="kiss-btn">❤️ Pošalji mi poljubac</button>
+    </div>
+
+    <p class="footer-msg">Volim te i ponosan sam na tebe. ❤️</p>
+  </div>
+
+  <div id="kiss-overlay">
+    <canvas id="kiss-canvas"></canvas>
+    <div class="kiss-text">Jedva čekam da te zagrlim. ❤️</div>
+  </div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ===================== Loading Screen ===================== */
+  window.addEventListener("load", function(){
+    setTimeout(function(){
+      document.getElementById("loading-screen").classList.add("hidden");
+    }, 2000);
+  });
+
+  /* ===================== Starfield Background ===================== */
+  const starsCanvas = document.getElementById("stars-canvas");
+  const starsCtx = starsCanvas.getContext("2d");
+  let stars = [];
+
+  function resizeStars(){
+    starsCanvas.width = window.innerWidth;
+    starsCanvas.height = window.innerHeight;
+    const count = Math.floor((window.innerWidth * window.innerHeight) / 9000);
+    stars = [];
+    for(let i=0;i<count;i++){
+      stars.push({
+        x: Math.random()*starsCanvas.width,
+        y: Math.random()*starsCanvas.height,
+        r: Math.random()*1.6 + 0.4,
+        alpha: Math.random(),
+        speed: Math.random()*0.02 + 0.005,
+        dir: Math.random() > 0.5 ? 1 : -1
+      });
+    }
+  }
+
+  function drawStars(){
+    starsCtx.clearRect(0,0,starsCanvas.width, starsCanvas.height);
+    for(const s of stars){
+      s.alpha += s.speed * s.dir;
+      if(s.alpha <= 0.1 || s.alpha >= 1){ s.dir *= -1; }
+      starsCtx.beginPath();
+      starsCtx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+      starsCtx.fillStyle = "rgba(255,255,255," + s.alpha.toFixed(2) + ")";
+      starsCtx.shadowColor = "rgba(255,255,255,0.8)";
+      starsCtx.shadowBlur = 4;
+      starsCtx.fill();
+    }
+    requestAnimationFrame(drawStars);
+  }
+
+  window.addEventListener("resize", resizeStars);
+  resizeStars();
+  drawStars();
+
+  /* ===================== Floating Hearts Background ===================== */
+  const heartsCanvas = document.getElementById("hearts-bg-canvas");
+  const heartsCtx = heartsCanvas.getContext("2d");
+  let bgHearts = [];
+
+  function resizeHearts(){
+    heartsCanvas.width = window.innerWidth;
+    heartsCanvas.height = window.innerHeight;
+  }
+
+  function makeHeart(){
+    return {
+      x: Math.random()*heartsCanvas.width,
+      y: heartsCanvas.height + Math.random()*200,
+      size: Math.random()*16 + 10,
+      speed: Math.random()*0.6 + 0.3,
+      drift: Math.random()*0.6 - 0.3,
+      opacity: Math.random()*0.5 + 0.2,
+      rotation: Math.random()*40 - 20
+    };
+  }
+
+  function initHearts(){
+    bgHearts = [];
+    const count = Math.floor(window.innerWidth / 60);
+    for(let i=0;i<count;i++){
+      const h = makeHeart();
+      h.y = Math.random()*heartsCanvas.height;
+      bgHearts.push(h);
+    }
+  }
+
+  function drawHeartShape(ctx, x, y, size, rotation, opacity){
+    ctx.save();
+    ctx.translate(x,y);
+    ctx.rotate(rotation * Math.PI/180);
+    ctx.beginPath();
+    const s = size/16;
+    ctx.moveTo(0, 4*s);
+    ctx.bezierCurveTo(0, 0, -8*s, 0, -8*s, -4*s);
+    ctx.bezierCurveTo(-8*s, -8*s, -3*s, -9*s, 0, -3*s);
+    ctx.bezierCurveTo(3*s, -9*s, 8*s, -8*s, 8*s, -4*s);
+    ctx.bezierCurveTo(8*s, 0, 0, 0, 0, 4*s);
+    ctx.closePath();
+    ctx.fillStyle = "rgba(255,182,217," + opacity.toFixed(2) + ")";
+    ctx.shadowColor = "rgba(255,150,200,0.6)";
+    ctx.shadowBlur = 8;
+    ctx.fill();
+    ctx.restore();
+  }
+
+  function drawHearts(){
+    heartsCtx.clearRect(0,0,heartsCanvas.width, heartsCanvas.height);
+    for(const h of bgHearts){
+      h.y -= h.speed;
+      h.x += h.drift;
+      if(h.y < -30){
+        Object.assign(h, makeHeart());
+        h.y = heartsCanvas.height + 30;
+      }
+      drawHeartShape(heartsCtx, h.x, h.y, h.size, h.rotation, h.opacity);
+    }
+    requestAnimationFrame(drawHearts);
+  }
+
+  window.addEventListener("resize", resizeHearts);
+  resizeHearts();
+  initHearts();
+  drawHearts();
+
+  /* ===================== Sparkle Effect on Click ===================== */
+  const sparkleChars = ["✨","⭐","💫","🌟"];
+
+  function spawnSparkle(x, y){
+    const el = document.createElement("div");
+    el.className = "sparkle";
+    el.textContent = sparkleChars[Math.floor(Math.random()*sparkleChars.length)];
+    el.style.left = x + "px";
+    el.style.top = y + "px";
+    document.body.appendChild(el);
+    setTimeout(function(){ el.remove(); }, 1000);
+  }
+
+  document.addEventListener("click", function(e){
+    for(let i=0;i<3;i++){
+      setTimeout(function(){
+        spawnSparkle(e.clientX + (Math.random()*30-15), e.clientY + (Math.random()*30-15));
+      }, i*80);
+    }
+  });
+
+  /* ===================== Confetti ===================== */
+  const confettiCanvas = document.getElementById("confetti-canvas");
+  const confettiCtx = confettiCanvas.getContext("2d");
+  let confettiPieces = [];
+  let confettiRunning = false;
+  const confettiColors = ["#ff8fc7","#c98bf0","#ffd6e8","#fff2b8","#9a7bd1","#ffffff"];
+
+  function resizeConfetti(){
+    confettiCanvas.width = window.innerWidth;
+    confettiCanvas.height = window.innerHeight;
+  }
+  window.addEventListener("resize", resizeConfetti);
+  resizeConfetti();
+
+  function launchConfetti(){
+    confettiPieces = [];
+    const count = 160;
+    for(let i=0;i<count;i++){
+      confettiPieces.push({
+        x: Math.random()*confettiCanvas.width,
+        y: -20 - Math.random()*confettiCanvas.height*0.5,
+        size: Math.random()*8 + 5,
+        color: confettiColors[Math.floor(Math.random()*confettiColors.length)],
+        speedY: Math.random()*3 + 2,
+        speedX: Math.random()*2 - 1,
+        rotation: Math.random()*360,
+        rotSpeed: Math.random()*8 - 4,
+        life: 0,
+        maxLife: 260 + Math.random()*80
+      });
+    }
+    if(!confettiRunning){
+      confettiRunning = true;
+      requestAnimationFrame(animateConfetti);
+    }
+  }
+
+  function animateConfetti(){
+    confettiCtx.clearRect(0,0,confettiCanvas.width, confettiCanvas.height);
+    let alive = false;
+    for(const p of confettiPieces){
+      p.life++;
+      if(p.life > p.maxLife) continue;
+      alive = true;
+      p.y += p.speedY;
+      p.x += p.speedX;
+      p.rotation += p.rotSpeed;
+      confettiCtx.save();
+      confettiCtx.translate(p.x, p.y);
+      confettiCtx.rotate(p.rotation * Math.PI/180);
+      confettiCtx.fillStyle = p.color;
+      confettiCtx.fillRect(-p.size/2, -p.size/2, p.size, p.size*0.6);
+      confettiCtx.restore();
+    }
+    if(alive){
+      requestAnimationFrame(animateConfetti);
+    } else {
+      confettiRunning = false;
+      confettiCtx.clearRect(0,0,confettiCanvas.width, confettiCanvas.height);
+    }
+  }
+
+  /* ===================== Reveal second card ===================== */
+  const revealBtn = document.getElementById("reveal-btn");
+  const card1 = document.getElementById("card-1");
+  const card2 = document.getElementById("card-2");
+
+  revealBtn.addEventListener("click", function(){
+    launchConfetti();
+    card1.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+    card1.style.opacity = "0";
+    card1.style.transform = "translateY(-20px) scale(0.96)";
+    setTimeout(function(){
+      card1.classList.add("hidden-card");
+      card2.classList.remove("hidden-card");
+      card2.style.animation = "none";
+      void card2.offsetWidth;
+      card2.style.animation = "fadeInUp 1s ease forwards";
+    }, 450);
+  });
+
+  /* ===================== Countdown to tomorrow ===================== */
+  function updateCountdown(){
+    const now = new Date();
+    const tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1, 0,0,0,0);
+    let diff = tomorrow - now;
+    if(diff < 0) diff = 0;
+
+    const hours = Math.floor(diff / (1000*60*60));
+    const minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+    const seconds = Math.floor((diff % (1000*60)) / 1000);
+
+    document.getElementById("cd-hours").textContent = String(hours).padStart(2,"0");
+    document.getElementById("cd-minutes").textContent = String(minutes).padStart(2,"0");
+    document.getElementById("cd-seconds").textContent = String(seconds).padStart(2,"0");
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  /* ===================== Kiss overlay ===================== */
+  const kissBtn = document.getElementById("kiss-btn");
+  const kissOverlay = document.getElementById("kiss-overlay");
+  const kissCanvas = document.getElementById("kiss-canvas");
+  const kissCtx = kissCanvas.getContext("2d");
+  let kissHearts = [];
+  let kissAnimId = null;
+
+  function resizeKissCanvas(){
+    kissCanvas.width = window.innerWidth;
+    kissCanvas.height = window.innerHeight;
+  }
+  window.addEventListener("resize", resizeKissCanvas);
+  resizeKissCanvas();
+
+  function spawnKissHearts(){
+    kissHearts = [];
+    const count = 90;
+    for(let i=0;i<count;i++){
+      kissHearts.push({
+        x: Math.random()*kissCanvas.width,
+        y: kissCanvas.height + Math.random()*300,
+        size: Math.random()*22 + 12,
+        speed: Math.random()*2 + 1.2,
+        drift: Math.random()*1 - 0.5,
+        opacity: Math.random()*0.6 + 0.4,
+        rotation: Math.random()*40 - 20,
+        delay: Math.random()*60
+      });
+    }
+  }
+
+  function animateKissHearts(){
+    kissCtx.clearRect(0,0,kissCanvas.width, kissCanvas.height);
+    for(const h of kissHearts){
+      if(h.delay > 0){ h.delay--; continue; }
+      h.y -= h.speed;
+      h.x += h.drift;
+      drawHeartShape(kissCtx, h.x, h.y, h.size, h.rotation, h.opacity);
+    }
+    kissAnimId = requestAnimationFrame(animateKissHearts);
+  }
+
+  kissBtn.addEventListener("click", function(){
+    kissOverlay.classList.add("active");
+    spawnKissHearts();
+    if(kissAnimId) cancelAnimationFrame(kissAnimId);
+    animateKissHearts();
+
+    setTimeout(function(){
+      kissOverlay.classList.remove("active");
+      setTimeout(function(){
+        cancelAnimationFrame(kissAnimId);
+        kissCtx.clearRect(0,0,kissCanvas.width, kissCanvas.height);
+      }, 600);
+    }, 3800);
+  });
+
+  kissOverlay.addEventListener("click", function(){
+    kissOverlay.classList.remove("active");
+  });
+
+  /* ===================== Music toggle ===================== */
+  const musicToggle = document.getElementById("music-toggle");
+  const bgMusic = document.getElementById("bg-music");
+  let musicPlaying = false;
+
+  musicToggle.addEventListener("click", function(){
+    if(musicPlaying){
+      bgMusic.pause();
+      musicToggle.classList.remove("playing");
+    } else {
+      bgMusic.play().catch(function(){
+        /* autoplay/policy block - ignore, user gesture already provided */
+      });
+      musicToggle.classList.add("playing");
+    }
+    musicPlaying = !musicPlaying;
+  });
+
+})();
+</script>
+</body>
+</html>
