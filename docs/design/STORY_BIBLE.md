@@ -138,11 +138,11 @@ The journey alternates **element cities** (learn a power) with **interlude citie
 
 ## 10. Recurring Characters (connective tissue for the interludes)
 
-- **The Rival** _[name TBD]_ — a wandering swordsman who duels Ryuma repeatedly across the journey (first at Sakaimichi; decisive duel at Shirasagi). A measure of Ryuma's growth; likely an ally by the end. Very Zoro.
-- **Sadao's Enforcer** _[name TBD]_ — a relentless hunter on Ryuma's trail (introduced at Kareno; last stand at Sekimon). Recurring mini-antagonist before the finale.
+- **Sōjirō Amano — "the Laughing Blade"** — a wandering swordsman who duels Ryuma repeatedly across the journey (first at Sakaimichi; decisive duel at Shirasagi). A grinning, brilliant duelist who fights for joy; a measure of Ryuma's growth, and likely an ally by the end. Very Zoro.
+- **Kuroba — "the Ironhound"** — Sadao's relentless hunter on Ryuma's trail (introduced at Kareno; last stand at Sekimon). Cold and tireless, he never stops tracking. Recurring mini-antagonist before the finale.
 - **The Mysterious Figure** — glimpsed across cities; finally delivers the second fragment at Narukami.
-- **The Spy** _[name TBD]_ — someone who stayed inside Kurogane-jō after the fall, still loyal to the family and never believing Kaito's guilt. From within Sadao's own household they feed Ryuma the truth — troop movements, plans, whispers of the mother's death. *(Identity to pick: Kaede's old handmaid? a retainer Ryuma grew up with?)* First contact at Higan.
-- **The Loyal Bird** _[name TBD]_ — Ryuma's messenger hawk, **a gift from his father** in boyhood, carrying letters between Ryuma and the Spy. In-game: delivers news that opens new objectives and lets the world (and home) react to Ryuma's growing legend. Ties to the hawks of Takanoha.
+- **Ayame — the Spy** — Lady Kaede's former handmaid *and* Ryuma's childhood friend, who stayed inside Kurogane-jō after the fall, still loyal to the family and never believing Kaito's guilt. From within Sadao's own household she feeds Ryuma the truth — troop movements, plans, whispers of the mother's death. First contact at Higan. Her closeness to both the mother and Ryuma makes her intel — and her danger — personal.
+- **Kaze — the Loyal Bird** — Ryuma's messenger hawk (name means "Wind"), **a gift from his father** in boyhood, carrying letters between Ryuma and Ayame. In-game: delivers news that opens new objectives and lets the world (and home) react to Ryuma's growing legend. Ties to the hawks of Takanoha.
 
 ## 8. What This Buys Us for Building
 
