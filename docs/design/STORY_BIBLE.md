@@ -102,6 +102,33 @@ The brothers march on the clan. The elders who followed Sadao are not all villai
 
 ---
 
+## 9. The Road of Amagiri — Full Itinerary (13 stops)
+
+The journey alternates **element cities** (learn a power) with **interlude cities** (master the power you have, earn resources, advance the story). Powers are deliberately spaced out so each is mastered before the next arrives; the Demon comes only after two full arcs beyond Lightning. _(See the journey map rendered in chat.)_
+
+| # | Location | Type | Power focus | Major event / purpose |
+|---|----------|------|-------------|----------------------|
+| **P** | **Kurogane-jō** (clan home) | Prologue | none | *The Fall.* Betrayal, father's death, exile. |
+| **1** | **Takanoha** — Cliff of Bells | Element | **Learn Wind** | Tengu boss. Hazuki (blind bell-keeper) knew Lady Kaede — first crack in the lie. Technique: *Severing Gale*. |
+| **2** | **Sakaimichi** — Crossroads Market | Interlude | *Master Wind* | Tomoe's forge = the **hub**. Sadao brands Ryuma a fugitive (bounty). The **Rival** first appears. Economy & gear. |
+| **3** | **Ukishima** — Floating Harbor | Element | **Learn Water** | Funayūrei boss. Master Isen reveals the father *suspected* betrayal. Technique: *Returning Tide*. |
+| **4** | **Higan** — the Lantern City | Interlude | *Master Water* | Festival of the dead in a city under Sadao's thumb. Go incognito; meet an **ally**; Rival returns. |
+| **5** | **Homura** — the Ember Forge | Element | **Learn Fire** | Fire Oni boss. Genta (father's sworn brother) confesses the night he ran. Technique: *Ember Fang*. |
+| **6** | **Kareno** — the Ashlands | Interlude | *Master Fire* | Defend refugees from Sadao's soldiers → become a legend to common folk. Face Sadao's **Enforcer**. Pick up Kaito's trail. |
+| **7** | **Narukami** — the Storm Shrine | Element | **Learn Lightning** | Raiju boss. The Hermit gives the **second fragment** and points to Kaito. Technique: *Thunderstep*. |
+| **8** | **Shirasagi** — the Heron Castle | Interlude | *Master Lightning + upgrade all four* | Last free city defying Sadao. Legend draws **allies**; the **Rival's** decisive duel. Great "gather your strength" arc. |
+| **9** | **Sekimon** — the Iron Gate | Interlude | *Mastery gauntlet (all elements)* | Storm the fortress pass; end **Sadao's Enforcer**. Dying, he reveals a truth that drives Ryuma into the Hollow. Point of no return. |
+| **10** | **Yomotsu** — the Hollow | Interlude | *Awaken Demon* | Haunted ruins of soul-binding. Confront a **vision of the mother**; learn the demon's cost. |
+| **11** | **Kaito's Refuge** | Reunion | — | Find the brother. **The revelation** — framed, mother murdered, Sadao holds the clan. |
+| **R** | **Return to Kurogane-jō** | Finale | — | The siege. The **twist → triumph.** Kaede's spirit exposes Sadao; Kaito is cleared; the clan reclaimed. |
+
+## 10. Recurring Characters (connective tissue for the interludes)
+
+- **The Rival** _[name TBD]_ — a wandering swordsman who duels Ryuma repeatedly across the journey (first at Sakaimichi; decisive duel at Shirasagi). A measure of Ryuma's growth; likely an ally by the end. Very Zoro.
+- **Sadao's Enforcer** _[name TBD]_ — a relentless hunter on Ryuma's trail (introduced at Kareno; last stand at Sekimon). Recurring mini-antagonist before the finale.
+- **The Mysterious Figure** — glimpsed across cities; finally delivers the second fragment at Narukami.
+- **The Ally from Higan** — a spy or disillusioned clansman who feeds Ryuma the truth about home.
+
 ## 8. What This Buys Us for Building
 
 This bible maps *directly* onto the milestone ladder from our plan:
