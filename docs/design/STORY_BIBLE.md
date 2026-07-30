@@ -43,7 +43,12 @@ The four pillars, and what they mean in practice:
 - **The second part of the blade** — a legendary fragment fused into Ryuma's own katana by the **master swordsmith** — unlocks the **Demon** power, the mythic fifth.
 - **The demon's cost (real tradeoff):** it is immense power on a knife's edge. Overuse risks the bound spirit slipping away forever — or overtaking Ryuma. Mechanically: a high-risk resource with dramatic consequences if leaned on too hard.
 
-**In gameplay terms:** each power is a milestone the swordsmith "awakens," each with its own upgrade branch bought with skill points. **5 powers = 5 unlock arcs = the ability tree.** Story and mechanics are one machine.
+**How a power is gained & grown:**
+1. **Learn the base skill** — each teacher grants the *core* ability of their element (e.g., Wind's *Severing Gale*). This is the one-time unlock that opens the power.
+2. **Open the skill tree** — with the base skill comes a **branching tree** of abilities and upgrades for that element.
+3. **You choose** — the player spends **skill points** (earned from bosses, trials, and exploration) to unlock the branches *they* want. Every playthrough builds a different Ryuma.
+
+**5 elements = 5 skill trees**, awakened at Old Tomoe's forge and shaped by the player. The interlude cities are where you farm points and *master* a tree before the next element arrives. Story and mechanics are one machine.
 
 ---
 
@@ -55,9 +60,18 @@ The four pillars, and what they mean in practice:
 - **The Brother — *Kaito*** — the elder son. Once the clan's brightest blade and rightful heir — until he was **framed for their mother's death** and exiled in disgrace. Believes his family let him fall. Now a rogue swordsman with a fearsome, bitter reputation. The reunion is the heart of the game.
 - **The Betrayer — *Elder Sadao*** _[name PROPOSED]_ — a senior council member who always believed *he* should lead. Cold, patient, politically brilliant. **Murdered Lady Kaede** and framed Kaito to remove the strong heir, then turned the council against the weakening father to seize the clan. **Believes he saved the clan from a failing old man** — and will say so to Ryuma's face. Endgame antagonist.
 - **The Swordsmith — *Old Tomoe*** _[name PROPOSED]_ — the father's oldest friend; the one hand alive who can awaken the blade's powers. He was there the night Kaede died, and helped seal her spirit into the fragment. Ryuma's guide and the game's "hub" character; keeper of the game's deepest secret.
-- **The Four Teachers** _[PROPOSED, one per element]_ — memorable masters/spirits Ryuma meets on the road, each granting an element and each with their own drama (some allies, some trials, some tied to the father's or mother's past).
+- **The Four Teachers** — each a living piece of Master Hidetora's past, and each agrees to help Ryuma **because of the father, not the son.** Full bonds & backstories in §5b.
 
 ---
+
+## 5b. The Four Teachers — Father-Bonds & Backstories
+
+**Unifying rule:** every teacher knew Master Hidetora, and each helps Ryuma *because of that bond* — so the journey is Ryuma walking through his father's whole life. Their four relationships span it: youth-rival → war-comrade → sworn-brother → old master.
+
+- **🌪️ Hazuki — Wind (Takanoha).** Trained beside Hidetora in their youth, blades matched as equals — until a duel took her eyes. Hidetora carried her from the field and swore she'd never want for anything; she withdrew to keep the bells of Takanoha, learning to "see" by the wind. **Helps because she owes his father her life** — and Ryuma's grip is Hidetora's ghost. She once met Lady Kaede, and drops the first hint that her death was no accident.
+- **🌊 Isen — Water (Ukishima).** Bled beside Hidetora in the border wars. When Isen's blade failed and men died, Hidetora shouldered the blame *with* him and brought him home. Isen laid down his sword to ferry souls across the black water in penance. **Helps because that debt is never paid.** Warned Hidetora the council had rotted; was not heeded.
+- **🔥 Genta — Fire (Homura).** Hidetora's **sworn brother** by blood-oath. When Sadao's coup came, Genta — cornered, threatened, afraid — fled instead of standing with his brother, and has drowned in shame and drink at the forge since. **Helps to atone**, handing his fire to the son he abandoned.
+- **⚡ The Hermit — Lightning (Narukami).** Before the clan, he was **Hidetora's own master** — the first to put lightning in his hands — later exiled for forbidden lore: the binding of souls into steel. **Helps because Ryuma is his student's son**, and he alone remembers what the "demon" truly is. His knowledge is the reason Kaede's soul could be bound at all — a guilt he carries up the storm-peak.
 
 ## 6. The Story — Act Structure
 
@@ -127,7 +141,8 @@ The journey alternates **element cities** (learn a power) with **interlude citie
 - **The Rival** _[name TBD]_ — a wandering swordsman who duels Ryuma repeatedly across the journey (first at Sakaimichi; decisive duel at Shirasagi). A measure of Ryuma's growth; likely an ally by the end. Very Zoro.
 - **Sadao's Enforcer** _[name TBD]_ — a relentless hunter on Ryuma's trail (introduced at Kareno; last stand at Sekimon). Recurring mini-antagonist before the finale.
 - **The Mysterious Figure** — glimpsed across cities; finally delivers the second fragment at Narukami.
-- **The Ally from Higan** — a spy or disillusioned clansman who feeds Ryuma the truth about home.
+- **The Spy** _[name TBD]_ — someone who stayed inside Kurogane-jō after the fall, still loyal to the family and never believing Kaito's guilt. From within Sadao's own household they feed Ryuma the truth — troop movements, plans, whispers of the mother's death. *(Identity to pick: Kaede's old handmaid? a retainer Ryuma grew up with?)* First contact at Higan.
+- **The Loyal Bird** _[name TBD]_ — Ryuma's messenger hawk, **a gift from his father** in boyhood, carrying letters between Ryuma and the Spy. In-game: delivers news that opens new objectives and lets the world (and home) react to Ryuma's growing legend. Ties to the hawks of Takanoha.
 
 ## 8. What This Buys Us for Building
 
