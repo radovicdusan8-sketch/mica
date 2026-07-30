@@ -24,5 +24,9 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
+# Our docs/build guide folder collides with UE's Build/ ignore above (Windows is case-insensitive) — keep it tracked
+!docs/build/
+!docs/build/**
+
 # ===== What we DO commit =====
 # .uproject, Config/, Content/ (assets), Source/ (C++), and everything under docs/
