@@ -1,0 +1,28 @@
+# ===== Unreal Engine =====
+# Auto-generated / build output — never commit these
+**/Binaries/
+**/Build/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/
+**/.vs/
+**/Content/**/*_BuiltData.uasset
+
+# Visual Studio / Rider
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sln
+*.suo
+.idea/
+*.xcodeproj
+*.xcworkspace
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ===== What we DO commit =====
+# .uproject, Config/, Content/ (assets), Source/ (C++), and everything under docs/
