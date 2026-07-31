@@ -21,8 +21,8 @@ A lone swordsman, denied his birthright and robbed of his father, walks a road o
 The four pillars, and what they mean in practice:
 
 - **Mythic / supernatural** — spirits, oni, cursed steel, and forbidden "demon" power. The world is haunted, not historical.
-- **Stylized, not photoreal** — bold colors, strong silhouettes, painterly skies. Closer to *Sekiro/Nioh* than to realism.
-  - **Refinement (locked via concept art, 2026-07-31):** *environments and cities* lean **stylized & painterly** — atmospheric, overkill-detailed, ominous ("something's coming"). *Characters* are rendered **grounded and realistic** — AAA-style, à la Nioh / Ghost of Tsushima. **Grounded heroes in a painted mythic world.**
+- **Realistic render, fantastical design** — high-fidelity, **photoreal** rendering (AAA — Nioh / Ghost of Tsushima / Elden Ring; UE5 Nanite + Lumen). **Not** cartoon, cel-shaded, or flat-painterly. The stylization lives in the *design*, not the render.
+  - **Refinement (re-locked 2026-07-31):** the whole game — *characters **and** environments* — is rendered **grounded, realistic, and high-quality**: real buildings, real materials, real light. The imagination is in the **architecture and world design, not the render style** — cities are **overkill: dense, crazy, larger-than-life, fantastical in form and scale**, but built from realistic, high-fidelity pieces. ***Realism of surface; fantasy of form.*** Never cartoon quality.
 - **Invented land, not real Japan** — our own clans, map, and myths. No Mongols, no history to answer to. _(Keeps us out of Ghost of Tsushima's lane entirely.)_
 - **Operatic, flashy combat** — named techniques, dramatic finishers, larger-than-life duels. Zoro energy.
 

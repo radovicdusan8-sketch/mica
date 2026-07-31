@@ -4,7 +4,7 @@
 
 **Status:** First design pass (2026-07-31). Shared language + the first two locations (Kurogane-jō, Takanoha) in full; template below for the rest. Iterating in road order.
 
-**Art direction (locked):** environments are **stylized & painterly** — atmospheric, *overkill*-detailed, ominous ("something's coming"). Bold silhouettes, painted skies, strong mood over realism. *Grounded heroes in a painted mythic world.* The world should feel a half-step haunted everywhere the mist gathers.
+**Art direction (re-locked 2026-07-31):** **high-fidelity realistic rendering** — real buildings, real materials, real light (AAA — Nioh / Ghost of Tsushima / Elden Ring; UE5 Nanite + Lumen). **Not** cartoon, cel-shaded, or flat-painterly. The imagination is in the **design, not the render**: cities are **overkill — dense, crazy, larger-than-life, fantastical in form and scale** — but built photoreal. ***Realism of surface; fantasy of form.*** Bold silhouettes and ominous mood ("something's coming"), a world a half-step haunted everywhere the mist gathers — all achieved with realistic assets, lighting, and atmosphere, not a stylized shader.
 
 ---
 
@@ -15,7 +15,7 @@
 - **Element = palette + weather.** Each element region carries its color and sky (see [Character Design §0](CHARACTER_DESIGN.md)): Wind = pale/white/skyblue and moving air; Water = blue/teal and fog/rain; Fire = crimson/ember and heat-haze; Lightning = violet/storm; Kurogane = charcoal/iron; Kiri-touched places = drained, grey, *too quiet.*
 - **Two-track cities.** **Element cities** = trial/boss architecture (a shrine, a peak, a haunted harbor) built around a setpiece arena. **Interlude cities** = lived-in social hubs (markets, festivals, castles) built around vendors, NPCs, and farming skill points.
 - **Sadao's shadow is visible.** As the road goes on, occupied cities show it environmentally: garrison banners over clan ones, curfew-empty streets, boarded shrines, the drained "Kiri quiet." The world visibly falls behind you.
-- **Painted set-dressing density.** Lean into *overkill* detail — lanterns, prayer-cloth, weathering, layered god-rays — so each frame reads like concept art. Optimize with painterly distance-cards, not by simplifying the hero framing.
+- **Overkill set-dressing density.** Lean into *overkill* detail — lanterns, prayer-cloth, weathering, layered god-rays, crowds, hanging signs — rendered **realistically** (high-fidelity meshes, PBR materials, Megascans-grade surfaces), so each frame is jaw-dropping *and* photoreal, never a flat illustration. Optimize distance with realistic LODs/impostors, not by simplifying the hero framing.
 
 **Structure (locked 2026-07-31):**
 - **Open regions, not linear stages.** Each stop is a **crafted city/setpiece embedded in an explorable open region** (Elden-Ring-ish) — the wilds *between* cities are real, roamable space for exploration, optional combat, and farming skill points. So every location below now carries a **Region** (the open area around it) alongside the city core. The city is the dense heart; the region is the breathing room.

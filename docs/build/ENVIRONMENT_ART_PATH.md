@@ -46,10 +46,11 @@ Solo devs don't model everything. Save your hours for what makes the city *yours
 - **Model by hand only:** your signature landmarks and story props (the Ember Forge, the bell-towers, Tomoe's forge, the Fivefold katana).
 - Customize bought assets with your palette/materials so they don't look generic.
 
-### Step 4 — Materials & palette (where "painterly" is actually won)
-UE renders realistic by default. You push it toward your **stylized painterly** direction here, not in the geometry.
-- Build/adapt **stylized materials** (softer, hand-painted-look textures; less photoreal grime).
-- Add a **Post Process Volume** and color-grade the whole scene to the concept's palette (a LUT or manual color grading) — this alone pulls a scene toward the painting.
+### Step 4 — Materials & palette (photoreal, high-fidelity)
+**Art direction is realistic** (re-locked 2026-07-31): real buildings, real materials, real light — *not* cartoon or painterly. UE renders realistic by default, so here you *lean into* its strengths, not fight them.
+- Use **PBR materials** and **Megascans**-grade surfaces (real stone, wood, metal, cloth); **Nanite** for high-detail geometry, **Lumen** for realistic global illumination. Aim for Ghost of Tsushima / Nioh / Elden Ring fidelity.
+- The *style* comes from **design and mood**, not a stylized shader: dramatic, overkill architecture rendered photoreal.
+- Add a **Post Process Volume** and color-grade to the concept's palette for *mood* (a LUT or manual grade) — pull the tone toward the concept **without** flattening it into an illustration.
 - Keep the **clan palette** consistent (see `CITY_DESIGN.md` §0): Wind pale/sky-blue, Water blue/teal, Fire crimson/ember, etc.
 
 ### Step 5 — Lighting & atmosphere (the mood engine)
@@ -66,7 +67,7 @@ Match the painting's time of day and feeling.
 ---
 
 ## The matte-backdrop trick (use your paintings directly)
-For the **unreachable distance** — the giant landmark on the horizon you never walk to — you don't have to build it in 3D. Drop the **concept painting itself** onto a large card/dome in the far background as a **painted matte backdrop**, and build only the playable foreground in real geometry. Cheap, fast, and it keeps the *exact* painted vista. Great for the Cliff of Bells' cloud-gulf and Homura's smoldering volcano.
+For the **unreachable distance** — the giant landmark on the horizon you never walk to — you don't have to build it in 3D. Drop a **high-resolution matte backdrop** (a realistic concept render / photo-composite, not a cartoon) onto a large card/dome in the far background, and build only the playable foreground in real geometry. Cheap, fast, and it keeps the *exact* dramatic vista while staying photoreal. Great for the Cliff of Bells' cloud-gulf and Homura's smoldering volcano.
 
 ---
 
