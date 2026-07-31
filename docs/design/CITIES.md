@@ -131,7 +131,7 @@
 **Culture:** none but Kaito and whatever hard company an exiled swordsman keeps.
 **Key NPC — Kaito (the brother):** once the clan's brightest blade and rightful heir, **framed for their mother's death** and exiled; now a rogue with a fearsome, bitter reputation, certain his own blood abandoned him.
 **The meeting (open decision — see below):** the reunion is the heart of the game.
-**The revelation:** when Ryuma awakens the fragment, the truth pours out through Kaede — **Kaito was framed, Sadao murdered her, Sadao holds the clan.** Exile becomes purpose; two brothers torn apart *on purpose* choose to walk home together, their mother's blade between them.
+**The revelation:** when Ryuma awakens the fragment, the truth pours out through Kaede — **Kaito was framed, Sadao murdered her, Sadao holds the clan.** And Kaito, who has watched from outside with no illusions, tears down the last one: he tells Ryuma **what has truly become of home** — the elders purged, the believers broken, the clan hollowed into a frightened tool — flatly contradicting every comforting letter Ryuma believed. The friend he entrusted the clan to has been its wolf, and Ryuma's trust and absence *enabled* it. Exile becomes purpose; two brothers torn apart *on purpose* choose to walk home together, their mother's blade between them. *(The letters-deception thread pays off here — see [HOME_FRONT.md](HOME_FRONT.md).)*
 **Does for the game:** the emotional turn; the party becomes two blades pointed home.
 
 > **Recommended for the open "first meeting" question:** stage it as **a duel that becomes a stand shoulder-to-shoulder.** Kaito, bitter and unbelieving, tests Ryuma with steel first (a real fight) — until **Kuroba the Ironhound** and Sadao's men close in and force the brothers back-to-back. Surviving *together* is what buys the fragile trust that the fragment's truth then seals. This delivers both beats the Bible floats, in the order that earns the reunion. _(Provisional — easy to revisit.)_
@@ -140,6 +140,7 @@
 
 ## R — Return to Kurogane-jō · The Finale *(Twist → Triumph)*
 **Look:** the black-iron castle again — but as a siege, storm-lit, the painted world holding its breath.
+**The hollow welcome:** this is *not* a hero's return. Sadao's long purge (see [HOME_FRONT.md](HOME_FRONT.md)) has left the clan cowed and hollow — believers broken, elders gone, some folk even resenting the heir who left and empowered Sadao while they suffered. Ryuma comes home to fear, not cheers; reclaiming the clan means winning back a broken people who no longer believe.
 **Key beats:** the brothers march home. The elders who followed Sadao are **not all villains** — many believed the lie. The finale confronts **Sadao**, who argues to the last that he *saved* the clan from a failing old man.
 **The twist that turns triumphant:** at the height of it — Ryuma tempted to spend the demon recklessly and lose his mother forever — **Kaede's bound spirit instead reveals the truth to the whole council.** The very "demon" the clan feared becomes the witness that **clears Kaito and damns Sadao.** The family's greatest wound becomes the weapon that wins. Sadao falls; the clan is reclaimed; Kaito is vindicated at last. Her purpose served, **Kaede passes on in peace,** and the brothers stand together in the seat their father meant for them both.
 **Earned grief note:** triumphant, not clean — the father is gone; the mother, having spoken her truth, is lost a second time; the clan restored and forever changed.
@@ -150,7 +151,8 @@
 ## Recurring Cast Across the Road *(quick reference)*
 - **Sōjirō Amano — "the Laughing Blade"** (Rival): Sakaimichi → Higan → **decisive duel at Shirasagi** → likely ally. A measure of Ryuma's growth; very Zoro.
 - **Kuroba — "the Ironhound"** (Hunter): introduced at **Kareno** → forces the reunion fight at Kaito's Refuge → **last stand at Sekimon**. Cold, tireless.
-- **Ayame — the Spy:** first contact at **Higan**; feeds the truth from inside Sadao's household; letters carried by Kaze.
-- **Kaze — the Loyal Bird:** Ryuma's messenger hawk, his father's gift; opens objectives and lets home react to Ryuma's legend. Tied to the hawks of Takanoha.
+- **Ayame — the Spy:** first contact at **Higan**; from inside Kurogane-jō she feeds Ryuma the *truth* — the counterpoint to Sadao's comforting letters — until her line goes dark as his grip tightens. (See [HOME_FRONT.md](HOME_FRONT.md).)
+- **Kaze — the Loyal Bird:** Ryuma's messenger hawk, his father's gift; the same bird carries **Sadao's warm lies and Ayame's desperate truth** in counterpoint, opens objectives, and lets home react to Ryuma's legend. Tied to the hawks of Takanoha.
+- **Sadao — from afar:** while Ryuma travels, the clan is (disastrously) in Sadao's hands; his periodic **letters** report a thriving clan with small "hiccups" he's handling — the kindly lie over the purge back home. (See [HOME_FRONT.md](HOME_FRONT.md).)
 - **The Mysterious Figure:** glimpsed across cities; delivers the second fragment at **Narukami.**
 - **Old Tomoe — the Swordsmith:** the hub/guide who awakens the blade and keeps the deepest secret.
