@@ -1,6 +1,8 @@
 # STORY BIBLE — ***Severed Blade*** *(alt / subtitle: The Fivefold Blade)*
 
 > **Companion docs (2026-07-31 world-build pass):** [The Opening — cinematic → Act 0 → The Fall](OPENING.md) · [World of Amagiri — realm & clans](WORLD_AMAGIRI.md) · [Magic & the Demon](MAGIC_AND_DEMON.md) · [The 13 Stops, deepened](CITIES.md) · [The Home Front — Sadao's letters & the hollow welcome](HOME_FRONT.md)
+>
+> **Design docs (2026-07-31 design pass):** [Character Design](CHARACTER_DESIGN.md) · [City Design](CITY_DESIGN.md)
 
 > A cinematic, stylized samurai action game about a dismissed son who must reforge his blade, master the four elements, and find his exiled brother — to reclaim the clan that betrayed their father and to avenge the mother whose death tore the family apart.
 
