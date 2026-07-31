@@ -40,7 +40,7 @@ Everything about Ryuma's blade — why it matters, why it is feared — traces t
 
 ## 4. The Clans of Amagiri
 
-Five houses matter to the story. Four hold the elements; one holds the forge.
+Six houses matter to the story. Four hold the elements; one holds the forge; one holds a grudge older than any of them.
 
 ### ⚙️ House Kurogane — "Black-Iron" — the Smith-Lords *(Ryuma's clan)*
 Home: **Kurogane-jō**, the Iron Castle, at the realm's crossroads. Neither the largest army nor the proudest lineage — but the most *needed*. For generations the Kurogane have been the neutral kingmakers of Amagiri: guardians of the ancestral forge that made the Fivefold Blade, and the only house trusted to bind elements into the steel of all the others. Their bloodline is unusually gifted — enough to produce a two-element master like **Hidetora** — but their true power was always **trust**. Sadao's coup did not just steal a castle; it seized the one forge that legitimizes a Fivefold heir, and turned the realm's neutral heart into a weapon. *(Members: Hidetora, Kaede, Kaito, Ryuma, Sadao, Tomoe.)*
@@ -59,12 +59,20 @@ Home: **Narukami**, the Storm Shrine. Once priest-warriors of the storm-peak and
 
 ---
 
-## 5. The War for the Realm — Sadao's Game
+### 🌫️ House Kiri — "the Mist" — the Rival, the Long Grudge _[PROPOSED name]_
+Home: a poor, fog-drowned domain at the realm's edge _[PROPOSED: **Muonji**, "the silent temple-valley"]_. For the whole of recorded history, **Kiri were the weakest house in Amagiri** — a thin, unreliable elemental gift, small lands, overlooked at every council, the clan no one feared. That humiliation is their engine. Too weak to ever win by steel, they learned across generations to win by **patience and shadow**: to watch, to wait, to place their people unseen inside stronger houses, and to move like fog — you notice nothing, and then you cannot see your own hand.
 
-Sadao is not merely a usurper of one castle. He is playing for the whole realm — and he is patient and brilliant.
+Their oldest ambition is the one everyone dismissed them as too small to hold: to seize the **Fivefold legacy** — the forge, the legend, the realm — and rule where they were always scorned. **They have been plotting this for a very long time.** Their masterstroke was not an army; it was a single blade planted in the realm's most trusted heart: House Kurogane. That blade is **Sadao**. *(See §5, and Story Bible §5–6. The irony is the whole realm's: Amagiri, "Heaven's Mist," undone by the Mist.)*
 
-- **The claim:** by seizing House Kurogane, Sadao holds the forge and the legend. He presents himself not as a tyrant but as the **strong hand Amagiri needs** — the man who will end the long fracture and unite the clans where a failing old man could not. Many believe him. That is what makes him dangerous, and what makes the finale a matter of *truth*, not just swordplay.
-- **The method:** clan by clan, Sadao cows or co-opts the elemental houses — pressure here, a bounty there, soldiers garrisoned in a "protected" city, a rival lord quietly bought. The road Ryuma walks is a realm *in the act of falling* under one man.
+---
+
+## 5. The War for the Realm — Kiri's Long Con
+
+Sadao is not a Kurogane elder who grew ambitious. **He is House Kiri's deepest-planted agent** — possibly their own heir — who spent a lifetime wearing the face of a loyal council-man to hollow out the clan from the inside. His coup is the payoff of a plot older than he is.
+
+- **The claim (the mask):** to the council and the realm, Sadao presents himself as the **strong hand Amagiri needs** — the man who will end the long fracture where a failing old man could not. Many believe him. That mask is what makes him dangerous, and what makes the finale a matter of *truth*, not just swordplay — the clan must learn it was **conquered from outside and never knew it.**
+- **The true aim:** Kiri does not want to lead the fracture — it wants to *end* it on Kiri's terms, holding the forge and, in time, the Fivefold Blade itself. A true Fivefold heir is the one thing that unravels the whole generational plot, which is why Ryuma must die or be discredited.
+- **The method:** clan by clan, Sadao cows or co-opts the elemental houses — pressure here, a bounty there, soldiers garrisoned in a "protected" city, a wavering lord quietly bought. The road Ryuma walks is a realm *in the act of falling* to a shadow no one has yet named.
 - **The map of loyalty (drives the city states):**
   - **Occupied / under his thumb:** **Higan** (Water region, festival city), **Kareno** (the Ashlands, refugees fleeing his soldiers), and of course **Kurogane-jō** itself.
   - **Pressured but standing:** **Ukishima**'s harbor-lords are wavering; **Homura** simmers.
