@@ -26,6 +26,16 @@ Across the journey, at the interlude cities, **letters from Sadao reach Ryuma** 
 
 Every admitted flaw makes him look **more** trustworthy — diligent, candid, burdened but capable. The player, like Ryuma, files each letter under *proof the clan is in good hands.* **The small truths are the delivery system for the enormous lie.**
 
+### And Ryuma writes back — the answer that damns him
+
+Ryuma replies, and his letters are **fully trusting, unguarded, grateful** — the warmth of a boy writing to the uncle who raised him and caught him when he fell:
+
+- *"I don't know what I would have done without you. Thank you for holding our home while I cannot."*
+- *"Tell our people I am coming back to them. Look after the elders for me."*
+- *"You should see what I can do now, uncle — I've learned the wind, and the water. Father's fire is next. I am close."*
+
+**Both sides of the correspondence are readable, and both become devastating.** Sadao's warm lie, re-read after the truth, is chilling — he is describing his own purge as "handling unrest." Ryuma's trusting reply, re-read after the truth, is worse — a grieving boy pouring love and gratitude onto the man who murdered his parents, thanking him for the very destruction of his home. And there is a colder edge: **Ryuma's guileless updates hand his enemy intelligence** — his route, his growing power, how near he is to the Fivefold that Kiri most fears. His trust is not only heartbreaking; it is *useful* to Sadao. Every kind word helps the hunter. *(See design notes, §7.)*
+
 ---
 
 ## 3. The Reality — Sadao Hollows the Clan
@@ -47,7 +57,7 @@ The lie does not go entirely unchallenged. **Ayame** — Kaede's former handmaid
 This builds a deliberate dissonance the player feels before Ryuma will admit it:
 - **Two accounts, one home.** Sadao's warm parchment says *all is well;* Ayame's frightened whispers say *all is wrong.* The player holds both and knows which to fear.
 - **Ryuma wants the letters to be true.** Guilt-ridden and far away, he clings to his friend's reassurance and rationalizes Ayame's warnings as fragments, exaggeration, the fear of a frightened woman. His trust in Sadao is a wound he can't yet see.
-- **The line goes dark.** As Sadao's grip tightens, Ayame is hunted; her messages grow sparse, then dangerous, then stop. *(Her fate is a mid-game stakes-raiser — captured, forced silent, or worse — and a debt the finale can pay.)* With her silenced, the comforting letters are all Ryuma has left — until his brother.
+- **The line goes dark — she is captured.** As Sadao's grip tightens, Ayame is hunted; her messages grow sparse, then desperate, then stop mid-word. She has been **caught and imprisoned inside Kurogane-jō** — Sadao's household spy, unmasked. With her silenced, the comforting letters are all Ryuma has left — until his brother. *(Her capture is a mid-game gut-drop and a debt the endgame pays: **the brothers free her during the return to Kurogane-jō** — see §6. She lived the truth from the inside and never stopped believing, which makes her both a rescue worth making and a voice that helps turn the broken clan.)*
 
 > **Design intent:** Ayame seeds *doubt*, not proof. The player suspects the letters are poison; Ryuma refuses to. Keeping the full, undeniable truth for the reunion is what makes the brother's words detonate.
 
@@ -73,6 +83,7 @@ Because of the purge, the **return to Kurogane-jō (finale)** is not a triumphan
 - The clan is **cowed and hollow** — frightened people who learned that hope for the Kurogane line gets you disappeared.
 - Some **resent Ryuma** — he left, he empowered Sadao, and no help ever came while they suffered under it. To them the returning heir is not a savior but the boy who abandoned them.
 - The elders who might have rallied to him are **gone or broken.**
+- **Freeing Ayame.** In the assault on Kurogane-jō, **the brothers break Ayame out** of Sadao's cells — the debt of the mid-game paid, the childhood friend who never stopped believing pulled from the dark. Bloodied but alive, she becomes a living witness to Sadao's rule from the inside, adding her voice to Kaede's testimony and helping turn the frightened clan. *(A rare thread of the old life that survives the story — a bittersweet light after so much loss.)*
 
 This *raises* the finale's stakes and gives the twist-ending its full meaning: reclaiming the clan is not just beating Sadao in a duel — it is **winning back a broken people who no longer believe.** That is precisely what the mother's-spirit revelation accomplishes: Kaede's testimony doesn't only damn Sadao and clear Kaito — it gives a frightened, hollowed clan permission to believe in the Kurogane line again. The welcome Ryuma is denied on arrival is *earned* by the truth, in the end. *(See [Story Bible §6, Act IV](STORY_BIBLE.md).)*
 
@@ -81,11 +92,17 @@ This *raises* the finale's stakes and gives the twist-ending its full meaning: r
 ## 7. Player-Facing Design Notes
 
 - **Letters as a recurring beat.** Each interlude delivers a Sadao letter (readable in a journal/inventory). They should be genuinely warm and reassuring on first read — the player must be taken in too.
-- **Re-readable after the reunion.** Once the truth is out, the letters should be revisitable, now read as chilling — the same words, transformed. A cheap, powerful gut-punch.
+- **Re-readable, both sides — the keystone.** The player can revisit the **full correspondence** — Sadao's letters *and* Ryuma's replies — in a journal. On first read they're a warm exchange between a boy and his uncle. After the truth, the *same words* transform: Sadao's warmth reads as a murderer narrating his own purge; Ryuma's gratitude reads as trust poured onto his parents' killer. Nothing is rewritten — only the player's understanding — which is the cheapest, most powerful gut-punch in the whole game. Build the letters to carry *both* readings from the start.
 - **The two-inbox dissonance.** Sadao's official letters vs. Ayame's hawk-borne whispers, arriving in counterpoint through the mid-game, is the mechanic that makes the player complicit in the dramatic irony.
 - **Kaze ties it together.** The hawk that carries the comforting lie *and* the desperate truth is the same bird — his father's gift — which is quietly thematic.
 
-## Open Threads
-- **Ayame's fate** — captured / silenced / killed / rescued: pick the stakes and whether the finale pays the debt.
+## Locked / Open
+
+**Locked (2026-07-31):**
+- **Ayame — captured, then rescued.** Her line goes dark because Sadao's people take her; she's held in Kurogane-jō and **freed by the brothers in the endgame return** (§4, §6).
+- **Ryuma writes back, fully trusting**, and **both sides of the correspondence are readable** so both letter and reply are devastating on re-read; his guileless updates also feed Sadao intelligence (§2).
+
+**Open:**
 - **Are the "hiccups" staged by Sadao's own agents**, exaggerated real events, or a mix? (Recommend: mostly his own manufacture — it makes him fully culpable.)
-- **Does Ryuma ever write back**, and do his replies (thanking Sadao, unknowingly reporting his own progress toward the Fivefold) feed Sadao intelligence? A dark possibility: Ryuma's trusting letters *help his enemy track him.*
+- **How Sadao's tone stays perfectly "caring uncle"** across every letter without one word tipping his hand — worth drafting the actual letters to test.
+- **Ayame after the rescue** — does her childhood-friendship with Ryuma become something more, or stay the fierce loyalty it is? (Open, unforced.)

@@ -141,6 +141,7 @@
 ## R — Return to Kurogane-jō · The Finale *(Twist → Triumph)*
 **Look:** the black-iron castle again — but as a siege, storm-lit, the painted world holding its breath.
 **The hollow welcome:** this is *not* a hero's return. Sadao's long purge (see [HOME_FRONT.md](HOME_FRONT.md)) has left the clan cowed and hollow — believers broken, elders gone, some folk even resenting the heir who left and empowered Sadao while they suffered. Ryuma comes home to fear, not cheers; reclaiming the clan means winning back a broken people who no longer believe.
+**Freeing Ayame:** in the assault, the brothers break **Ayame** out of Sadao's cells — the mid-game debt paid; she survives as a living witness to his rule and adds her voice to Kaede's testimony.
 **Key beats:** the brothers march home. The elders who followed Sadao are **not all villains** — many believed the lie. The finale confronts **Sadao**, who argues to the last that he *saved* the clan from a failing old man.
 **The twist that turns triumphant:** at the height of it — Ryuma tempted to spend the demon recklessly and lose his mother forever — **Kaede's bound spirit instead reveals the truth to the whole council.** The very "demon" the clan feared becomes the witness that **clears Kaito and damns Sadao.** The family's greatest wound becomes the weapon that wins. Sadao falls; the clan is reclaimed; Kaito is vindicated at last. Her purpose served, **Kaede passes on in peace,** and the brothers stand together in the seat their father meant for them both.
 **Earned grief note:** triumphant, not clean — the father is gone; the mother, having spoken her truth, is lost a second time; the clan restored and forever changed.
@@ -151,7 +152,7 @@
 ## Recurring Cast Across the Road *(quick reference)*
 - **Sōjirō Amano — "the Laughing Blade"** (Rival): Sakaimichi → Higan → **decisive duel at Shirasagi** → likely ally. A measure of Ryuma's growth; very Zoro.
 - **Kuroba — "the Ironhound"** (Hunter): introduced at **Kareno** → forces the reunion fight at Kaito's Refuge → **last stand at Sekimon**. Cold, tireless.
-- **Ayame — the Spy:** first contact at **Higan**; from inside Kurogane-jō she feeds Ryuma the *truth* — the counterpoint to Sadao's comforting letters — until her line goes dark as his grip tightens. (See [HOME_FRONT.md](HOME_FRONT.md).)
+- **Ayame — the Spy:** first contact at **Higan**; from inside Kurogane-jō she feeds Ryuma the *truth* — the counterpoint to Sadao's comforting letters — until she is **captured** and her line goes dark. **The brothers free her in the finale.** (See [HOME_FRONT.md](HOME_FRONT.md).)
 - **Kaze — the Loyal Bird:** Ryuma's messenger hawk, his father's gift; the same bird carries **Sadao's warm lies and Ayame's desperate truth** in counterpoint, opens objectives, and lets home react to Ryuma's legend. Tied to the hawks of Takanoha.
 - **Sadao — from afar:** while Ryuma travels, the clan is (disastrously) in Sadao's hands; his periodic **letters** report a thriving clan with small "hiccups" he's handling — the kindly lie over the purge back home. (See [HOME_FRONT.md](HOME_FRONT.md).)
 - **The Mysterious Figure:** glimpsed across cities; delivers the second fragment at **Narukami.**
