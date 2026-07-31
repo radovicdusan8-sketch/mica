@@ -1,4 +1,6 @@
-# STORY BIBLE — *(working title: **The Fivefold Blade**)*
+# STORY BIBLE — ***Severed Blade*** *(alt / subtitle: The Fivefold Blade)*
+
+> **Companion docs (2026-07-31 world-build pass):** [World of Amagiri — realm & clans](WORLD_AMAGIRI.md) · [Magic & the Demon](MAGIC_AND_DEMON.md) · [The 13 Stops, deepened](CITIES.md)
 
 > A cinematic, stylized samurai action game about a dismissed son who must reforge his blade, master the four elements, and find his exiled brother — to reclaim the clan that betrayed their father and to avenge the mother whose death tore the family apart.
 
@@ -109,11 +111,16 @@ The brothers march on the clan. The elders who followed Sadao are not all villai
 - The **twist ending that resolves triumphant** (demon = mother's spirit; her truth wins the day).
 - Magic = progression: Wind → Water → Fire → Lightning + Demon.
 
-**Still open (low-stakes, easy to revisit):**
-1. **Title** — *The Fivefold Blade* is the working title. Alternatives welcome.
-2. **Names** — Amagiri (land), Hidetora (father), Kaede (mother), Sadao (elder), Tomoe (smith) are placeholders you can swap anytime.
-3. **First meeting with Kaito** — duel, or shoulder-to-shoulder against a shared enemy?
-4. **The four teachers** — their identities and which are tied to the parents' past.
+**Newly locked (2026-07-31 world-build pass — all provisional, easy to revisit):**
+1. **Title → *Severed Blade*.** Confirmed by the user's own usage and the project name on disk (`SeveredBlade`). Reads on every level: the blade reforged from broken steel; the family severed; the mother severed from life yet bound to the blade; the brothers severed apart. *The Fivefold Blade* kept as alt/subtitle.
+2. **Names — kept, [PROPOSED] tags dropped:** *Amagiri* (land), *Hidetora* (father), *Kaede* (mother — "maple," autumn/falling-leaf grief), *Sadao* (elder), *Tomoe* (smith). New world names introduced: clan houses **Sōra/Nagi/Kaen/Ikazuchi**, the legend **the Fivefold Lord (Amatsu)**, the Hermit **Raizō** — all still open (see companion docs).
+3. **First meeting with Kaito → a duel that becomes a stand shoulder-to-shoulder.** Kaito tests Ryuma with steel first; **Kuroba the Ironhound** and Sadao's men then force the brothers back-to-back, and surviving together buys the trust the fragment's truth seals. Delivers *both* floated options in the order that earns the reunion. (See [Cities §11](CITIES.md).)
+4. **The four teachers — locked** (already detailed in §5b): Hazuki (Wind), Isen (Water), Genta (Fire), the Hermit/Raizō (Lightning), each bonded to a different era of Hidetora's life.
+
+**Still open (see companion docs' "Open Threads"):**
+- Clan/legend/Hermit names above (Sōra, Nagi, Kaen, Ikazuchi, Amatsu, Raizō) and the soul-art term *Konpaku-tō*.
+- **Kaito's element** — proposed: one self-awakened element, mirroring Ryuma's teacher-given fourfold path.
+- Minor domains, per-element skill-tree branch names, and two-element NPCs (a possible Enforcer/rival mirror of Hidetora's mastery).
 
 ---
 
