@@ -4,7 +4,7 @@
 >
 > **Design docs (2026-07-31 design pass):** [Character Design](CHARACTER_DESIGN.md) · [City Design](CITY_DESIGN.md)
 >
-> **Narrative docs (2026-07-31):** [Story Beats — what happens in each city](STORY_BEATS.md) · [Character Arcs — development across the journey](CHARACTER_ARCS.md)
+> **Narrative docs (2026-07-31):** [Story Beats — what happens in each city](STORY_BEATS.md) · [Character Arcs — development across the journey](CHARACTER_ARCS.md) · [Opening Cinematic — shot-by-shot storyboard/animatic](OPENING_STORYBOARD.md)
 
 > A cinematic, stylized samurai action game about a dismissed son who must reforge his blade, master the four elements, and find his exiled brother — to reclaim the clan that betrayed their father and to avenge the mother whose death tore the family apart.
 
