@@ -2,7 +2,7 @@
 
 > **Companion docs (2026-07-31 world-build pass):** [The Opening — cinematic → Act 0 → The Fall](OPENING.md) · [World of Amagiri — realm & clans](WORLD_AMAGIRI.md) · [Magic & the Demon](MAGIC_AND_DEMON.md) · [The 13 Stops, deepened](CITIES.md) · [The Home Front — Sadao's letters & the hollow welcome](HOME_FRONT.md)
 >
-> **Design docs (2026-07-31 design pass):** [Character Design](CHARACTER_DESIGN.md) · [City Design](CITY_DESIGN.md)
+> **Design docs (2026-07-31 design pass):** [Character Design](CHARACTER_DESIGN.md) · [City Design](CITY_DESIGN.md) · [The Fivefold Blade — katana design](KATANA_DESIGN.md)
 >
 > **Narrative docs (2026-07-31):** [Story Beats — what happens in each city](STORY_BEATS.md) · [Character Arcs — development across the journey](CHARACTER_ARCS.md) · [Opening Cinematic — shot-by-shot storyboard/animatic](OPENING_STORYBOARD.md)
 
