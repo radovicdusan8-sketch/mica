@@ -107,6 +107,10 @@ Three classic symptoms, usually two root causes:
 - **Source (Mannequin) also static** → no anim selected, or toolbar is in **Edit Pose** not **Run Retarget**. Pick an anim; switch mode.
 - **Source moves, target frozen** → Ryuma's IK Rig has no chains/root, or chain mapping is empty. Fix ↓.
 
+**"I don't see Retarget Root/Chains" →** you're in the **Skeleton** asset. Those live in a separate **IK Rig** asset you must create (right-click the Skeletal Mesh → **Create → IK Rig**). *(IK Rig/Retargeter need no C++ — they're editor assets and work the same in a C++ project.)*
+
+**Example chain setup for a Meshy/Mixamo-style rig** (bone names like `Pelvis`, `L_Upperarm`, `L_Hand`, `Spine01`): Retarget Root = **Pelvis**; chains — `Spine` (Spine01→Spine02), `LeftArm` (L_Upperarm→L_Hand), `RightArm` (R_Upperarm→R_Hand), `LeftLeg` (L_Thigh→L_Foot), `RightLeg` (R_Thigh→R_Foot), `Head` (Neck→Head), `Root` (Root→Root). Name them to match the Mannequin's chains so the retargeter auto-maps.
+
 **Build Ryuma's IK Rig:**
 1. Open his **IK Rig** (or right-click his Skeletal Mesh → **Create IK Rig**).
 2. Right-click **pelvis/hips** → **Set Retarget Root.**
