@@ -39,9 +39,23 @@ Every costume, crest, and palette should tell the player *which power and which 
 - **Arc:** powerless exile → legend of the road → the man who finishes his father's sentence and reclaims a broken clan. His growth is *earned restraint* — the demon climax turns on him choosing not to burn his mother for power.
 - **Signature image:** kneeling in the burning house, gripping his dying father's hand — everything gone still.
 
----
+### 1a. Ryuma — reference & concept prompts *(for image gen → Blender/UE)*
 
-## 2. SADAO — the Villain *(the beloved friend)*
+**Using your own picture:** attach it as the **reference / input image** in Flux (image-to-image / character reference) so his **face and likeness stay consistent** while the prompt sets the outfit, mood, and pose. Add a line like *"keep the face and likeness from the reference image"* to either prompt.
+
+**PROMPT A — cinematic "cold aura" hero shot** *(for vibe / approval):*
+> "Full-body cinematic character portrait of a cold, stoic lone samurai radiating a quiet, dangerous, effortless aura — utterly composed and unbothered. Late twenties, lean and battle-worn; calm, piercing dark eyes with an ice-cold unreadable expression; tied-back black hair, faint scar across the brow, light stubble. He stands relaxed but perfectly centered, one hand resting on the katana at his hip. Outfit — dark, understated, functional, weathered: a deep indigo kimono, a layered tattered charcoal-grey haori with a high collar, cloth forearm wraps, dark hakama, a single crimson accent cord at the waist (his only splash of color), a beautiful understated katana at his hip. Muted cold palette of charcoal, indigo and ash. Drifting mist, wind moving the haori, dramatic cinematic rim light, moody dark background, shallow depth of field. Photorealistic, Unreal Engine 5 / Ghost of Tsushima / Nioh quality, hyper-detailed realistic skin and fabric, 8k. NOT anime, NOT cartoon, NOT cel-shaded. [Keep the face and likeness from the reference image.]"
+
+**PROMPT B — T-pose model sheet** *(the one you actually build from — this is what makes Blender/UE easier):*
+> "Character model sheet / turnaround reference for 3D modeling: the SAME character shown in three matching views side by side — front view, side (profile) view, and back view — standing in a straight, symmetrical A-pose (arms slightly out from the body), full body head-to-toe in frame. Neutral flat light-grey background, even flat studio lighting, NO dramatic shadows, NO perspective distortion (orthographic, straight-on). A lean, battle-worn stoic samurai in his late twenties: deep indigo kimono, layered charcoal-grey haori with a high collar, cloth forearm wraps, dark hakama, single crimson waist cord, katana at hip; tied-back black hair, faint brow scar. Identical, consistent design across all three views. Photorealistic, clean, sharp, hyper-detailed, technical design-sheet style — NOT a dramatic hero shot, NOT anime, NOT cartoon. [Keep the face and likeness from the reference image.]"
+
+**Why Prompt B is set up this way (and how to use it in Blender):**
+- **A/T-pose** → required later for clean **rigging** (arms out so the shoulder/elbow bones weight properly).
+- **Flat grey background + even lighting** → no baked-in shadows, so it works as honest **color/texture reference** and cuts out cleanly.
+- **Orthographic front + side** → in Blender, `Add → Image → Reference` (or N-panel → Background) and place the **front image in Front view (Numpad 1)** and the **side image in Right view (Numpad 3)**, aligned — then you **model directly over them** like tracing. This is the single biggest "easier in Blender" trick.
+- Generate it **tall / portrait** (e.g. 1024×1536+) so the full body has resolution.
+- *AI caveat:* getting all three views perfectly consistent is hard; if it struggles, generate **front** and **side** as two separate clean images at the same settings — those two are all you need as Blender reference planes.
+- **For UE:** this same sheet is your texturing target — match his canon palette (indigo/charcoal + one crimson cord) so the in-engine material lines up.
 
 **One-line:** the family's dearest friend and secret destroyer — a House Kiri agent who wore a good man's face for a lifetime. **The design brief is the whole twist: he must never read as the villain.**
 
