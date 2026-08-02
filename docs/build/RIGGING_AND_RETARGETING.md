@@ -99,5 +99,21 @@ Three classic symptoms, usually two root causes:
 - **Positioned wrong** → in `BP_ThirdPersonCharacter`, Mesh component **Location Z ≈ -88**, **Rotation Z = -90** (Manny defaults) so feet sit on the capsule bottom, facing forward.
 - **Still static (no animation)** → no working Anim Blueprint on *his* skeleton. (1) Double-click the Skeletal Mesh and drag a retargeted anim into the preview — if it plays, the mesh is fine. (2) Set the Mesh component's **Anim Class** to the **retargeted (Ryuma-skeleton)** Anim Blueprint. (3) **#1 cause:** the mesh's **Skeleton** and the ABP's target skeleton must both be **Ryuma's** — assigning Manny's ABP to Ryuma's mesh = static.
 
+## Troubleshooting — "rigged in Blender but the target is STATIC in the IK Retargeter"
+
+**Key idea:** rigging in Blender gives you a **skeleton + skin weights**. The Retargeter drives motion through an **IK Rig** (Retarget **Root** + Retarget **Chains**) you must build **in Unreal**. Skeleton ≠ IK Rig. No chains = frozen target.
+
+**10-second diagnosis** (IK Retargeter → **Asset Browser** at the bottom → click an animation):
+- **Source (Mannequin) also static** → no anim selected, or toolbar is in **Edit Pose** not **Run Retarget**. Pick an anim; switch mode.
+- **Source moves, target frozen** → Ryuma's IK Rig has no chains/root, or chain mapping is empty. Fix ↓.
+
+**Build Ryuma's IK Rig:**
+1. Open his **IK Rig** (or right-click his Skeletal Mesh → **Create IK Rig**).
+2. Right-click **pelvis/hips** → **Set Retarget Root.**
+3. For each limb, select **start + end bone** → right-click → **New Retarget Chain**: Spine, LeftArm, RightArm, LeftLeg, RightLeg, Head (+Neck). **Name them like the Mannequin's chains.**
+4. IK Retargeter → **Chain Mapping** panel: map each **Target** chain to its **Source** chain (do it by hand if bone names differ, e.g. Mixamo `mixamorig:` names won't auto-map).
+5. Confirm **Source IK Rig = Mannequin**, **Target IK Rig = Ryuma** in Details.
+6. Fix the **Retarget Pose** if limbs then look twisted (match Ryuma's base pose to the Mannequin's).
+
 ## Where this sits in the milestones
 This completes the jump from the **Manny stand-in** (Milestone 0) to the **real Ryuma** driving the same movement/combat you build in Milestones 1–3 — with **zero-magic** animations, exactly his Prologue state. New attack/combat animations later slot into the same retargeted Anim Blueprint.
