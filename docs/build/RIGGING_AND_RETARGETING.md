@@ -90,5 +90,14 @@ This is the heart of it. UE5 uses **IK Rigs** (a description of each skeleton) +
 
 ---
 
+## Troubleshooting — "imported but tiny / static / invisible until I move"
+
+Three classic symptoms, usually two root causes:
+
+- **Character is tiny** → **unit/scale mismatch** (Blender metres vs UE centimetres). Fix at source: in Blender set height ≈ **1.8 m**, `Ctrl+A → All Transforms`, re-export/re-import. Or in UE: re-import with **Import Uniform Scale = 100**, or scale up the **Mesh** component in `BP_ThirdPersonCharacter`. (Sanity check: open the Skeletal Mesh asset — a speck next to the grid = scale bug.)
+- **Invisible until he moves** → a *consequence* of being tiny: micro **bounds** get **culled** at rest and only redraw on movement. Fixing the scale fixes this. (Also check he isn't positioned sunk into the floor.)
+- **Positioned wrong** → in `BP_ThirdPersonCharacter`, Mesh component **Location Z ≈ -88**, **Rotation Z = -90** (Manny defaults) so feet sit on the capsule bottom, facing forward.
+- **Still static (no animation)** → no working Anim Blueprint on *his* skeleton. (1) Double-click the Skeletal Mesh and drag a retargeted anim into the preview — if it plays, the mesh is fine. (2) Set the Mesh component's **Anim Class** to the **retargeted (Ryuma-skeleton)** Anim Blueprint. (3) **#1 cause:** the mesh's **Skeleton** and the ABP's target skeleton must both be **Ryuma's** — assigning Manny's ABP to Ryuma's mesh = static.
+
 ## Where this sits in the milestones
 This completes the jump from the **Manny stand-in** (Milestone 0) to the **real Ryuma** driving the same movement/combat you build in Milestones 1–3 — with **zero-magic** animations, exactly his Prologue state. New attack/combat animations later slot into the same retargeted Anim Blueprint.
