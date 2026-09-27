@@ -11,7 +11,7 @@ These rules apply to every Claude Code session in this repo. Keep this file shor
 
 `WHAT_TO_DO.md` is the brief for writing the walkthroughs in batches. Check the batch table in `docs/walkthroughs/00-index.md` before acting on it, so finished batches aren't redone.
 
-**Status (update when it changes):** documentation phase. Batch 1 of 5 written 2026-09-27. Don't build game systems (Milestone 2 onward) until the developer asks.
+**Status (update when it changes):** documentation phase. Batches 1 and 2 of 5 written 2026-09-27 (walkthroughs 00–07). Don't build game systems (Milestone 2 onward) until the developer asks.
 
 ## Who you're working with
 
@@ -70,6 +70,14 @@ Fill these in during walkthrough 01, then keep them current.
 - Editor build from the command line, with the editor closed (walkthrough 01, step 10):
   `& "C:\Program Files\Epic Games\UE_5.8\Engine\Build\BatchFiles\Build.bat" WraithGameEditor Win64 Development -Project="C:\Dev\Wraith\WraithGame\WraithGame.uproject" -WaitMutex`
 - Open the project: `WraithGame/WraithGame.uproject`
+
+## Repo tools
+
+- `python tools/dialogue/dialogue_tool.py validate|export|report`: dialogue sheet checks and Data Table JSON (walkthrough 02).
+- `tools/unreal/import_dialogue.py`: run inside the Unreal Editor to import voice files and refill the dialogue tables (walkthrough 02).
+- `python tools/art/palette_ratio.py <image> [--mask out.png]`: measures the 70/20/10 palette ratio (walkthroughs 03, 06, 07).
+- `python tools/art/lut_tool.py neutral|from-cube`: makes Unreal color-grading LUT textures (walkthrough 07).
+- The art tools need Pillow (`pip install pillow`).
 
 ## Documentation work
 

@@ -14,12 +14,12 @@ The running example throughout is the **vertical slice**: the cold open, the Lan
 |---|---|---|---|
 | 00 | [Index](00-index.md) | This page: the list, the learning order, and the conventions | Written (batch 1) |
 | 01 | [Project setup](01-project-setup.md) | Unreal and Visual Studio, the `WraithGame` C++ project, folders, version control (Perforce vs. Git LFS), Claude Code, and the Blender and Unreal MCPs, each with a test task | Written (batch 1) |
-| 02 | [Story and dialogue pipeline](02-story-and-dialogue-pipeline.md) | Organizing the story bible and scene scripts, the dialogue spreadsheet, importing it as a Data Table, and linking lines to audio and subtitles | Planned (batch 2) |
-| 03 | [Concept art](03-concept-art.md) | Consistent AI-assisted concept art, character reference sheets, Krita paintovers, turnarounds for modeling, and a reference library | Planned (batch 2) |
-| 04 | [Characters](04-characters.md) | Modeling in Blender, Wraith's cloak in Marvelous Designer, retopology, UVs, texturing, budgets, export to Unreal, and Chaos Cloth | Planned (batch 2) |
-| 05 | [Rigging and animation](05-rigging-and-animation.md) | AccuRig or Rigify, phone mocap at home, Blender cleanup, Cascadeur combat animation, the IK Retargeter, Animation Blueprints, and root motion | Planned (batch 2) |
-| 06 | [Environments](06-environments.md) | Blockout, a modular gothic kit on a grid, Fab and Megascans, snow, frost, icicles, snowfall, deformable snow, a PCG distant city, and fog | Planned (batch 2) |
-| 07 | [Lighting and rendering](07-lighting-and-rendering.md) | Lumen at night, lantern lights, violet accents, volumetric fog, grading to the palette, TSR or FSR instead of DLSS, and scalability | Planned (batch 2) |
+| 02 | [Story and dialogue pipeline](02-story-and-dialogue-pipeline.md) | Organizing the story bible and scene scripts, the dialogue spreadsheet, importing it as a Data Table, and linking lines to audio and subtitles | Written (batch 2) |
+| 03 | [Concept art](03-concept-art.md) | Consistent AI-assisted concept art, character reference sheets, Krita paintovers, turnarounds for modeling, and a reference library | Written (batch 2) |
+| 04 | [Characters](04-characters.md) | Modeling in Blender, Wraith's cloak in Marvelous Designer, retopology, UVs, texturing, budgets, export to Unreal, and Chaos Cloth | Written (batch 2) |
+| 05 | [Rigging and animation](05-rigging-and-animation.md) | AccuRig or Rigify, phone mocap at home, Blender cleanup, Cascadeur combat animation, the IK Retargeter, Animation Blueprints, and root motion | Written (batch 2) |
+| 06 | [Environments](06-environments.md) | Blockout, a modular gothic kit on a grid, Fab and Megascans, snow, frost, icicles, snowfall, deformable snow, a PCG distant city, and fog | Written (batch 2) |
+| 07 | [Lighting and rendering](07-lighting-and-rendering.md) | Lumen at night, lantern lights, violet accents, volumetric fog, grading to the palette, TSR or FSR instead of DLSS, and scalability | Written (batch 2) |
 | 08 | [Core combat](08-core-combat.md) | Movement, Enhanced Input, attack chains, launchers and air combos, dodge, grab, hit detection, hit-stop, Motion Warping, style rank, and game feel | Planned (batch 3) |
 | 09 | [GAS and spirit switching](09-gameplay-ability-system-and-spirit-switching.md) | The Gameplay Ability System in C++, then swapping Warden spirits mid-combo while keeping combo state | Planned (batch 3) |
 | 10 | [Lantern system](10-lantern-system.md) | Lit and dark zones, enemies that grow stronger in darkness, relighting, snuffers, and Sister Vesper | Planned (batch 3) |
@@ -101,7 +101,15 @@ Every walkthrough uses the same template:
 - **Costs** were checked on the date at the top of each walkthrough. Prices and license terms change, so check before you pay.
 - **Paths:** `WraithGame/` is the Unreal project folder at the repo root. `/Game/Wraith/...` is a folder in Unreal's Content Browser; Unreal calls the project's `Content` folder `/Game`, so on disk it's `WraithGame/Content/Wraith/...`.
 - **Menu paths** are written as **Edit > Project Settings > Engine > Input**. Unreal moves things between versions, so if a path doesn't match, search the settings panel for the setting name.
-- **Naming** follows the README: `SM_`, `SK_`, `M_`, `MI_`, `T_`, `A_`, `ABP_`, `BP_`, `NS_`, `WBP_`, `LS_`, `DT_` for assets, and the `W` prefix after Unreal's class prefix for C++ classes (`AWCharacter`, `UWLanternComponent`).
+- **Naming** follows the README: `SM_`, `SK_`, `M_`, `MI_`, `T_`, `A_`, `ABP_`, `BP_`, `NS_`, `WBP_`, `LS_`, `DT_` for assets, and the `W` prefix after Unreal's class prefix for C++ classes (`AWCharacter`, `UWLanternComponent`). Walkthroughs 02–07 **suggest** a few prefixes the README doesn't have yet:
+  - `L_` for levels;
+  - `VO_` for voice Sound Waves;
+  - `AM_` for montages;
+  - `BS_` for blend spaces;
+  - `IKR_` for IK Rigs and `RTG_` for IK Retargeters;
+  - `MF_` for material functions and `MPC_` for material parameter collections.
+
+  Add the ones you agree with to the README so they become official.
 
 ---
 
@@ -141,3 +149,4 @@ The walkthroughs are written in batches, and the developer reviews each batch be
 | Date | Change |
 |---|---|
 | 2026-09-27 | Batch 1 written |
+| 2026-09-27 | Batch 2 written (02–07), at the "deeper" level of detail. Added repo tools: `tools/dialogue/dialogue_tool.py`, `tools/unreal/import_dialogue.py`, `tools/art/palette_ratio.py`, `tools/art/lut_tool.py`, and `docs/art/wraith-palette.gpl` |

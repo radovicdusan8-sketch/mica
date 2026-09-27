@@ -1,0 +1,4 @@
+LineID,SceneID,Order,Speaker,TextJA,TextEN,Direction,Context,Status,Tags
+D00_S010_0010,D00_S010,10,WRAITH,灯りが消えた。,The lantern has gone out.,"Quiet, flat.",Format example only. Not from the script.,Draft,EXAMPLE
+D00_S010_0020,D00_S010,20,WRAITH,……まだ終わっていない。,It isn't over yet.,Barely audible.,Format example only. Not from the script.,Draft,EXAMPLE
+B_WRAITH_ATTACK_01,,0,WRAITH,消えろ！,Begone!,Short and sharp.,Combat bark. Format example only.,Draft,EXAMPLE;BARK

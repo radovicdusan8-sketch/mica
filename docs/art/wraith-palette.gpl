@@ -1,0 +1,11 @@
+GIMP Palette
+Name: Wraith
+Columns: 6
+# Wraith: The Black Hour palette (README, section 3).
+# Import into Krita through the Palette docker; Blender and GIMP read this format too.
+ 11   9  12	Grave #0B090C
+ 34  35  44	Wet slate #22232C
+ 85  74  83	Fog #554A53
+224 162  74	Lantern gold #E0A24A
+155 107 255	Spirit violet #9B6BFF
+216 204 184	Porcelain #D8CCB8

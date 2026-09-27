@@ -309,6 +309,10 @@ Do this **before** the Unreal project exists, so every `.uasset` is stored in LF
      *.psd filter=lfs diff=lfs merge=lfs -text
      *.kra filter=lfs diff=lfs merge=lfs -text
 
+     # Reference boards (BeeRef, PureRef; walkthrough 03)
+     *.bee filter=lfs diff=lfs merge=lfs -text
+     *.pur filter=lfs diff=lfs merge=lfs -text
+
      # Audio and video
      *.wav filter=lfs diff=lfs merge=lfs -text
      *.flac filter=lfs diff=lfs merge=lfs -text
@@ -662,7 +666,7 @@ This proves the README's pipeline rule, "Blender makes the pieces, Unreal puts t
   - [ ] `source-art/blender/environments/lantern-market`
   - [ ] `source-art/marvelous/wraith-cloak`
   - [ ] `source-art/concept/` subfolders for Wraith, Vesper, the enemies, and Lantern Market
-- [ ] Voice folders exist: `audio/voice/ja/cold-open` and `audio/voice/ja/district-01`
+- [ ] Voice folders exist: `audio/voice/ja/D00` (cold open) and `audio/voice/ja/D01`, following the IDs in `docs/story/README.md`
 - [ ] `docs/story/` holds `wraith-story-bible-v2.md` and the cold open and District 1 scene scripts (walkthrough 02 organizes them)
 - [ ] `.gitattributes` covers every file type the slice will produce; re-check it the first time you save from Marvelous Designer, Cascadeur, and your texturing tool
 - [ ] `SM_LanternPost_Blockout` modeled through the Blender MCP, exported, and imported at the right scale: the first Lantern Market blockout piece
